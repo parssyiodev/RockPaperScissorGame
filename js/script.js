@@ -57,9 +57,9 @@ options.forEach((option) =>{
 
 
 const disabledbox = () =>{
-    for (option of options){
-        option.disabled = true;
-    }
+    options.forEach (option =>{
+        option.classList.add("disabled");
+    })
 }
 
 let drawGame = () =>{

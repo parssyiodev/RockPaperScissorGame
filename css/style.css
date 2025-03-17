@@ -2,7 +2,7 @@ body{background-color: aliceblue; font-family: Arial, Helvetica, sans-serif;}
 .container{width:1000px; margin:0 auto;}
 .game,.score{text-align: center; width:100%; float:left; padding:30px 0px; align-items: center; clear:both;}
 .game>.userOpt>div{width:100px; height:100px; box-shadow: 5px 5px 5px #ccc; overflow:hidden; margin:10px; border-radius:50%; overflow: hidden; padding:20px; float:left; background:#ffffff; border:1px solid #dddddd;}
-.game>.userOpt>div#rock, .game>div#paper, .game>div#scissor {
+.game>.userOpt>div#rock, .game>.userOpt>div#paper, .game>.userOpt>div#scissor {
     width: 100px;
     height: 100px;
     text-align: center;
@@ -65,3 +65,8 @@ body{background-color: aliceblue; font-family: Arial, Helvetica, sans-serif;}
 .score>div.comp>div:first-child{margin-left:7%; margin-right:0px;}
 
 #msg{text-align: center;}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5; /*makes the button look disabled */
+}
