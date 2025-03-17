@@ -1,0 +1,66 @@
+body{background-color: aliceblue; font-family: Arial, Helvetica, sans-serif;}
+.container{width:1000px; margin:0 auto;}
+.game,.score{text-align: center; width:100%; float:left; padding:30px 0px; align-items: center; clear:both;}
+.game>.userOpt>div{width:100px; height:100px; box-shadow: 5px 5px 5px #ccc; overflow:hidden; margin:10px; border-radius:50%; overflow: hidden; padding:20px; float:left; background:#ffffff; border:1px solid #dddddd;}
+.game>.userOpt>div#rock, .game>div#paper, .game>div#scissor {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: url(../../images/stone.gif);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game>.userOpt>div h3, .game>div h3, .game>div h3 {
+    width: 110px;
+    margin-top: 92px;
+    margin-left: -5px;
+    font-size: 15px;
+    border-radius: 0px 0px 25px 25px;
+    background: #f9f9f9;
+    padding: 6px 0px;
+}
+
+.game>.userOpt>div#paper{background: url(../../images/paper.gif);}
+.game>.userOpt>div#scissor {
+    background: url(../../images/scissor.gif);
+    background-size: 150px;
+    background-position-y: 20px;
+}
+
+.game>.userOpt {
+    width: 510px;
+    display: block;
+    margin: 0 auto;
+}
+
+.score>div{width: 46%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px 15px;}
+
+.score>div.user{text-align:right;}
+.score>div.comp{text-align:left;}
+.score>div>div {
+    font-size: 30px;
+    padding: 5px;
+    clear: both;
+    padding-top: 15px;
+    text-align: center;
+    font-size:24px; 
+    float: right;
+}
+
+.score>div.user>div:first-child, .score>div.comp>div:first-child{border: 4px solid #456454;
+    border-radius: 53%;
+    background: #ddd;
+    margin-right:6%;
+    width: 50px;
+    height: 40px;}
+
+.score>div.comp>div{float:left;}
+.score>div.comp>div:first-child{margin-left:7%; margin-right:0px;}
+
+#msg{text-align: center;}
