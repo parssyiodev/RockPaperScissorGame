@@ -63,29 +63,34 @@ const disabledbox = () =>{
 }
 
 let drawGame = () =>{
-    msg.innerHTML = `It's Draw! You both selected: ${compSelect}`
+    msg.innerHTML = `It's Draw!<br> <span>You both selected: ${compSelect} </span>`
 }
+
+
 
 let winner = (userWin) =>{
     if(userWin){
         uscore.innerHTML = userscore += 1;
-        msg.innerHTML = `You Win! Computer Selected: ${compSelect}`
+        msg.innerHTML = `You Win!<br> <span>Computer Selected: ${compSelect} </span>`
         seriesWin();
     } else{
         cscore.innerHTML = compscore += 1;
-        msg.innerHTML = `You lose! Computer Selected: ${compSelect}`
+        msg.innerHTML = `You Lose!<br> <span>Computer Selected: ${compSelect} </span>`
         seriesWin();
     }
 }
 
 let seriesWin = () =>{
     if(userscore === 10){
-        msg.innerHTML = `You Win! The Series by ${userscore} : ${compscore}`
+        msg.innerHTML = `<span>CONGRATULATION <br><br></span>You Win! <br> <span>The Series by ${userscore} : ${compscore}</span>`
+        msg.classList.add("up");
         disabledbox();
     } else if(compscore === 10){
-        msg.innerHTML = `You Lost! The Series by ${compscore} : ${userscore}`
+        msg.innerHTML = `<span>SORRY <br><br></span>You Lost! <br> <span>The Series by ${compscore} : ${userscore}</span>`
+        msg.classList.add("down");
         disabledbox();
     }
 }
+
 
 

@@ -64,9 +64,57 @@ body{background-color: aliceblue; font-family: Arial, Helvetica, sans-serif;}
 .score>div.comp>div{float:left;}
 .score>div.comp>div:first-child{margin-left:7%; margin-right:0px;}
 
-#msg{text-align: center;}
+#msg{text-align: center; color:#0b2659; font-size:24px; font-weight: bold;}
+#msg span{font-size:18px; font-weight: 500;}
 
 .disabled {
     pointer-events: none;
     opacity: 0.5; /*makes the button look disabled */
 }
+.pop {
+    clear: both;
+    width: 400px;
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100px;
+    padding-top: 4%;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px #555;
+}
+
+.pop.up {
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    width: 650px;
+    height: 350px;
+    background: url(../images/firecrack.gif);
+    background-size: contain;
+    background-position: center;
+}
+
+.pop.down{
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    width: 650px;
+    height: 400px;
+    background-color: #0e0a49;
+    background-image: url(../images/sad.gif);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 180px;
+}
+
+#msg.pop.up,#msg.pop.down {
+    padding-top: 6%;
+    font-size: 85px;
+    font-weight: bolder;
+    color: #ffffff;
+    line-height: 50px;
+}
+#msg.pop.down {padding-top: 2%;}
+
+#msg.pop.up span, #msg.pop.down span{font-size:36px; padding-bottom:15px;}
